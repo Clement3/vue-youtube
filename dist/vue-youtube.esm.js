@@ -1,6 +1,6 @@
 /*!
  * vue-youtube v1.4.0
- * (c) 2019 Antério Vieira
+ * (c) 2020 Antério Vieira
  * Released under the MIT License.
  */
 
@@ -192,10 +192,10 @@ var Youtube = {
   },
   mounted: function mounted () {
     window.YTConfig = {
-      host: 'https://www.youtube.com/iframe_api'
+      host: 'https://youtube.com/iframe_api'
     };
 
-    var host = this.nocookie ? 'https://www.youtube-nocookie.com' : 'https://www.youtube.com';
+    var host = this.nocookie ? 'https://youtube-nocookie.com' : 'https://youtube.com';
 
     this.player = player(this.$el, {
       host: host,

@@ -131,10 +131,10 @@ export default {
   },
   mounted () {
     window.YTConfig = {
-      host: 'https://www.youtube.com/iframe_api'
+      host: 'https://youtube.com/iframe_api'
     }
-    
-    const host = this.nocookie ? 'https://www.youtube-nocookie.com' : 'https://www.youtube.com'
+
+    const host = this.nocookie ? 'https://youtube-nocookie.com' : 'https://youtube.com'
 
     this.player = player(this.$el, {
       host,
